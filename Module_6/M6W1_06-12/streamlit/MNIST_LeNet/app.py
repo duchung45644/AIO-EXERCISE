@@ -41,7 +41,7 @@ def load_model(model_path, num_classes=10):
     return lenet_model
 
 
-model = load_model('lenet_model.pt')
+model = load_model('Module_6/M6W1_06-12/streamlit/MNIST_LeNet/mnist_lenet_model.pt')
 
 
 def inference(image, model):
