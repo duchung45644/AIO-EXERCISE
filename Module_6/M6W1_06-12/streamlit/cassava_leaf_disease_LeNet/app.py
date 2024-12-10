@@ -51,7 +51,8 @@ def load_model(model_path, num_classes=5):
     return lenet_model
 
 
-model = load_model('lenet_model.pt')
+# Module_6\M6W1_06-12\streamlit\cassava_leaf_disease_LeNet\lenet_model_cassava.pt
+model = load_model('Module_6/M6W1_06-12/streamlit/cassava_leaf_disease_LeNet/lenet_model_cassava.pt')
 
 
 def inference(image, model):
