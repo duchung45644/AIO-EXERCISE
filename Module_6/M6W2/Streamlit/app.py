@@ -11,7 +11,7 @@ from components.streamlit_footer import footer
 # Set page configuration
 st.set_page_config(
     page_title="AIO2024 Module02 Project Image Depth Estimation - AI VIETNAM",
-    page_icon='static/aivn_favicon.png',
+    page_icon='Module_6/M6W2/Streamlit/static/aivn_favicon.png',
     layout="wide"
 )
 
@@ -46,7 +46,7 @@ def main():
         st.title('AIO2024 - Module06 - Advanced CNN Architectures')
         
     with col2:
-        logo_img = open("static/aivn_logo.png", "rb").read()
+        logo_img = open("Module_6/M6W2/Streamlit/static/aivn_logo.png", "rb").read()
         logo_base64 = base64.b64encode(logo_img).decode()
         st.markdown(
             f"""
@@ -67,12 +67,12 @@ def main():
 
     # Check model choice and assign the default image and class names accordingly
     if "ResNet" in model_choice:
-        default_image_path = "static/rime.jpg"
+        default_image_path = "Module_6/M6W2/Streamlit/static/rime.jpg"
         model = resnet_model
         classes = weather_classes
         class_file = config.weather_classes_file
     else:
-        default_image_path = "static/glacier.jpg"
+        default_image_path = "Module_6/M6W2/Streamlit/static/glacier.jpg"
         model = densenet_model
         classes = scenes_classes
         class_file = config.scenes_classes_file
