@@ -8,8 +8,8 @@ class AppConfig:
         self.densenet_weights_path = "weights/Sences_DenseNet.pth"
 
         # Paths to class label files
-        self.weather_classes_file = "classes/weather_cls.txt"
-        self.scenes_classes_file = "classes/scenes_cls.txt"
+        self.weather_classes_file = "./classes/weather_cls.txt"
+        self.scenes_classes_file = "./classes/scenes_cls.txt"
 
         # Device configuration
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
