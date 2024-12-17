@@ -165,3 +165,6 @@ cython_debug/
 *.pdf
 .vscode
 .history
+ULTIMATE/
+Module_5/M5W3_16-11/FER-2013/
+data/
